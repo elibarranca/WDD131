@@ -1,46 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Cool Pics 📷</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A gallery of cool pictures">
-    <meta name="author" content="Your Name">
-    <link rel="stylesheet" href="coolpics.css">
-    <script defer src="coolpics.js"></script>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="A gallery of cool pictures">
+  <meta name="author" content="Your Name">
+  <title>Cool Pics 📷</title>
+  <link rel="stylesheet" href="coolpics.css" />
+  <script defer src="coolpics.js"></script>
 </head>
 <body>
-    <header>
+  <header>
     <h1>Cool Pics 📷</h1>
-    <button id="menuButton">Menu</button>
-    <nav>
-        <ul>
-         <a href="coolpics/index.html">Coolpics</a>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="#">Gallery</a></li>
-        </ul>
+    <button class="menu-button">Menu</button>
+    <nav class="menu hide">
+      <a href="#">Home</a>
+      <a href="#">Gallery</a>
+      <a href="#">About</a>
     </nav>
-    </header>
+  </header>
 
-    <main>
+  <main>
     <h2>Amazing Views</h2>
     <section class="gallery">
-        <figure><img src="norris-sm.jpeg" alt="picture"></figure>
-        <figure><img src="norris-sm.jpeg" alt="picture"></figure>
-        <figure><imga< src="norris-sm.jpeg" alt="picture"></figure>
-        <figure><img src="norris-sm.jpeg" alt="picture"></figure>
-        <figure><img src="norris-sm.jpeg" alt="picture"></figure>
-        <figure><img src="norris-sm.jpeg" alt="picture"></figure>
-        <figure><img src="norris-sm.jpeg" alt="picture"></figure>
-        <figure><img src="norris-sm.jpeg" alt="picture"></figure>
-        <figure><img src="norris-sm.jpeg" alt="picture"></figure>
+      <img src="norris-sm.jpeg" alt="Norris">
+      <img src="mountain-sm.jpeg" alt="Mountain">
+      <img src="river-sm.jpeg" alt="River">
     </section>
-    </main>
+  </main>
 
-    <footer>
+  <footer>
     <p>&copy;2025 Not a real site 😀</p>
-    </footer>
+  </footer>
+
+  <!-- Image Viewer Modal -->
+  <dialog id="viewer" class="image-viewer">
+    <img id="viewer-img" src="" alt="">
+    <button id="close-viewer" class="close-viewer">X</button>
+  </dialog>
 </body>
 </html>
