@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+:root {
+Gold color: #EFC69B
+Red color: #AF1B3F
+Dark color: #473144
+Body font: Helvetica, Arial, sans-serif
+  --secondary-font: "Mooli", sans-serif;
+
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 0 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Skip to Content Accessibility Link */
+.skiptocontent a {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.skiptocontent a:focus {
+  top: 0;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Navigation Grid */
+nav ul {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px;
+  justify-content: end;
+  justify-items: end;
+  gap: 1rem;
+  list-style: none;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  padding: 1rem 0;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Main layout with articles and filters */
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Articles container */
+#book-list section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ccc;
+  font-size: 0.9rem;
+  color: #666;
+}
